@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#080808">
+		<title>IGBT - Applications</title>
+		<link rel="icon" type="image/x-icon" href="fei.png">
+		<link rel = "stylesheet" href = "css/style.css">
+		<link rel = "stylesheet" href = "css/style-app.css">
+
+		<link rel="apple-touch-icon" href="fei.png">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="./index.html">
+					<img class="logo" src="img/logo.jpg" alt="logo" width="50" height="50">
+				</a>
+				<ul class="nav_links">
+					<li id="l1"> <a href="./work.html" id="link1"></a> </li>
+					<li id="l2"> <a href="./history.html" id="link2"></a> </li>
+					<li id="l3"> <a href="./apps.html" id="link3"></a> </li>
+					<li id="l4"> <a href="./pros_cons.html" id="link4"></a> </li>
+					<li id="l5"> <a href="./main_part.html" id="link5"></a> </li>
+					<li id="l6"> <a href="./faq.html" id="link6"></a> </li>
+				</ul>
+			</nav>
+		</header>
+
+		
+		<div class="flag">
+			<abbr title="Slovenčina" id="sk" onclick="slovak()">
+			</abbr>
+
+			<abbr title="English" id="us" onclick="english()">
+
+			</abbr>
+		</div>
+
+		<section>
+			<h2 id="appsh">.</h2>
+			<div class="container">
+				<div class="text-container">
+					<div id="appsdiv">
+						
+					</div>
+					<br><br>
+					<hr>
+					<div id="change-text">
+						<div class="myText fade" id="appsp1">
+
+						</div>
+
+						<div class="myText fade" id="appsp2">
+
+						</div>
+
+						<div class="myText fade" id="appsp3">
+
+						</div>
+
+						<div class="myText fade" id="appsp4">
+
+						</div>
+
+						<div class="myText fade" id="appsp5">
+
+						</div>
+					</div>
+				</div>
+				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+					<div class="numbertext">1 / 5</div>
+					<img class="img" src="img/img-app/ups.jpg" height="650" width="1000" alt="UPS">
+					<div class="text" id="appst1"></div>
+					</div>
+					
+					<div class="mySlides fade">
+					<div class="numbertext">2 / 5</div>
+					<img class="img" src="img/img-app/etrains.jpg" height="650" width="1000" alt="Electronic Train">
+					<div class="text" id="appst2"></div>
+					</div>
+					
+					<div class="mySlides fade">
+					<div class="numbertext">3 / 5</div>
+					<img class="img" src="img/img-app/HVDC.jpg" height="650" width="1000" alt="HVDC">
+					<div class="text" id="appst3"></div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 5</div>
+						<img class="img" src="img/img-app/motor.png" height="650" width="1000" alt="Motor Drives">
+						<div class="text" id="appst4"></div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">5 / 5</div>
+						<img class="img" src="img/img-app/zvaracka.png" height="650" width="1000" alt="Welding">
+						<div class="text" id="appst5"></div>
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+					
+				<div class="center">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+					<span class="dot" onclick="currentSlide(4)"></span> 
+					<span class="dot" onclick="currentSlide(5)"></span> 
+				</div>
+			</div>
+		</section>
+
+		<div id="backdrop">
+			<div id="modal">
+				<ul>
+					<li>QIAN, Cheng. Application spectrum for IGBTs. 2018. Dostupné tiež z: https :
+						//www.researchgate.net/figure/Application-spectrum-for-IGBTs-10_fig1_
+						322515037</li>
+					<li>https://www.electronics-tutorials.ws/power/insulated-gate-bipolar-transistor.html</li>
+					<li>https://electrohomepro.com/sk/main/news/573-chto-takoe-svarochnyy-invertor.html</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="source">
+			
+		</div>
+
+		<footer>
+			<div class="flex">
+				<address id="address">
+				</address>
+				<a href="https://www.facebook.com/jano.chrtan/"><div class="buttonlink" id="contact"></div></a>
+			</div>
+			<div class="footerend">FEI STUBA</div>
+		</footer>
+
+
+		<script src="js/anime.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-app.js"></script>
+		<script src="js/source.js"></script>
+	</body>
+</html>

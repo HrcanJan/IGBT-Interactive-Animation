@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#080808">
+		<title>IGBT - Main working part - IGBT</title>
+		<link rel="icon" type="image/x-icon" href="fei.png">
+		<link rel = "stylesheet" href = "css/style-history.css">
+		<link rel = "stylesheet" href = "css/style.css">
+		<link rel = "stylesheet" href = "css/style-main.css">
+
+		<link rel="apple-touch-icon" href="fei.png">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="./index.html">
+					<img class="logo" src="img/logo.jpg" alt="logo" width="50" height="50">
+				</a>
+				<ul class="nav_links">
+					<li id="l1"> <a href="./work.html" id="link1"></a> </li>
+					<li id="l2"> <a href="./history.html" id="link2"></a> </li>
+					<li id="l3"> <a href="./apps.html" id="link3"></a> </li>
+					<li id="l4"> <a href="./pros_cons.html" id="link4"></a> </li>
+					<li id="l5"> <a href="./main_part.html" id="link5"></a> </li>
+					<li id="l6"> <a href="./faq.html" id="link6"></a> </li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="flag">
+			<abbr title="Slovenčina" id="sk" onclick="slovak()">
+			</abbr>
+
+			<abbr title="English" id="us" onclick="english()">
+
+			</abbr>
+		</div>
+
+		<div id="backdrop">
+			<div id="modal">
+				<ul>
+					<li>https://www.youtube.com/watch?v=7ukDKVHnac4&ab_channel=Lesics</li>
+					<li>https://www.youtube.com/watch?v=ekSbhm4l0Go&t=554s&ab_channel=EngineeringFunda</li>
+					<li>https://components101.com/articles/what-is-igbt-working-operation-symbol-and-types</li>
+					<li>https://en.wikipedia.org/wiki/Insulated-gate_bipolar_transistor</li>
+					<li>https://www.electronics-tutorials.ws/power/insulated-gate-bipolar-transistor.html</li>
+					<li>BUTTAY, Cyril. Own work, loosely based on model in "Power semiconductor devices".
+						B. J. Baliga, 2006. isbn 0-534-94098-6</li>
+					<li>PERRET, R. Power Electronics Semiconductor Devices. ISTE Ltd., 2009. isbn
+						978-1-84821-064-6</li>
+				</ul>
+			</div>
+		</div>
+
+		<section>
+			<h2 id="hiwh">.</h2>
+			<div class="containermain">
+				<div>
+					<div class="slider">
+						<div class="slides">
+							<div class="slide" id="first">
+								<div id="dopingen">
+									<img class="img" src="img/img-main/ptype.png" alt="Doping">
+								</div>
+								<div id="dopingsk">
+									<img class="img" src="img/img-main/ptypesk.png" alt="Doping">
+								</div>
+							</div>
+							<div class="slide">
+								<div id="IGBT2"></div>
+							</div>
+							<div class="slide">
+								<div id="biasen">
+									<img class="img" src="img/img-main/biasen.png" alt="Bias">
+								</div>
+								<div id="biassk">
+									<img class="img" src="img/img-main/biassk.png" alt="Bias">
+								</div>
+							</div>
+							<div class="slide">
+								<div id="IGBT"></div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<label for="range"></label>
+						<input id="range" type="range" min="0" max="3" value="0" onchange="showSlidesText()">
+					</div>
+				</div>
+				<div class="mar">
+					<div class="myText">
+						<p id="hiwp1">
+						</p>
+							<ul>
+								<li id="hiwl1">
+
+								</li>
+								<li id="hiwl2">
+
+								</li>
+							</ul>
+					</div>
+					<div class="myText">
+						<p id="hiwp2">
+
+						</p>
+					</div>
+					<div class="myText">
+						<p id="hiwp3">
+
+						</p>
+					</div>
+					<div class="myText">
+						<p id="hiwp4">
+
+						</p>
+					</div>
+				</div>
+			</div>
+			<a href="./work.html">
+				<div class="animation">
+					<div class="center">
+						<span id="hiws"></span>
+					</div>
+				</div>
+			</a>
+		</section>
+
+		<div class="source">
+			
+		</div>
+
+		<footer>
+			<div class="flex">
+				<address id="address">
+				</address>
+				<a href="https://www.facebook.com/jano.chrtan/"><div class="buttonlink" id="contact"></div></a>
+			</div>
+			<div class="footerend">FEI STUBA</div>
+		</footer>
+		
+		<script src="js/anime.min.js"></script>
+		<script src="js/svg.js"></script>
+		<script src="js/script-work-draw.js"></script>
+		<script src="js/script-main-animation.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-main.js"></script>
+		<script src="js/script-history.js"></script>
+		<script src="js/source.js"></script>
+	</body>
+</html>

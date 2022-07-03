@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#080808">
+		<title>IGBT - History</title>
+		<link rel="icon" type="image/x-icon" href="fei.png">
+		<link rel = "stylesheet" href = "css/style.css">
+		<link rel = "stylesheet" href = "css/style-history.css">
+
+		<link rel="apple-touch-icon" href="fei.png">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="./index.html">
+					<img class="logo" src="img/logo.jpg" alt="logo" width="50" height="50">
+				</a>
+				<ul class="nav_links">
+					<li id="l1"> <a href="./work.html" id="link1"></a> </li>
+					<li id="l2"> <a href="./history.html" id="link2"></a> </li>
+					<li id="l3"> <a href="./apps.html" id="link3"></a> </li>
+					<li id="l4"> <a href="./pros_cons.html" id="link4"></a> </li>
+					<li id="l5"> <a href="./main_part.html" id="link5"></a> </li>
+					<li id="l6"> <a href="./faq.html" id="link6"></a> </li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="flag">
+			<abbr title="Slovenčina" id="sk" onclick="slovak()">
+			</abbr>
+
+			<abbr title="English" id="us" onclick="english()">
+
+			</abbr>
+		</div>
+
+		<div id="backdrop">
+			<div id="modal">
+				<ul>
+					<li>ŠUŠOLIAK, Michal (ed.). Vývoj Vzdelávacieho Modulu "IGBT". Faculty of Electrical Engineering a Information Technology, 2012.</li>
+				</ul>
+			</div>
+		</div>
+
+		<section>
+
+			<h2 id="hish">.</h2>
+			<div class="grid">
+				<div>
+					<p><b>NPT</b> - Non-Punch-Through IGBT</p>
+					<br>
+					<p><b>PT</b> - Punch-Through IGBT</p>
+					<br>
+					<p><b>CS</b> - Collector Short IGBT</p>
+					<br>
+					<p><b>PT CSTBT</b> -  Punch-Through Carrier Stored Trench gate Bipolar Transistor</p>
+					<br>
+					<p><b>FZ NPT</b> - Field Stop NPT-IGBT</p>
+					<br>
+					<p><b>RB</b> - Reverse Blocking IGBT</p>
+					<br>
+					<p><b>LPT</b> - Light punch-through IGBT</p>
+					<br>
+					<p><b>RC</b> - Reverse Conducting IGBT</p>
+					<br>
+				</div>
+
+				<div class="container">
+					<div class="slider">
+						<div class="slides">
+							<div class="slide" id="first">
+								<img src="img/img-history/historia1.png" alt="Intro">
+							</div>
+							<div class="slide">
+								<img src="img/img-history/historia2.png" alt="NPT">
+							</div>
+							<div class="slide">
+								<img src="img/img-history/historia3.png" alt="PT">
+							</div>
+							<div class="slide">
+								<img src="img/img-history/historia4.png" alt="Planar">
+							</div>
+							<div class="slide">
+								<img src="img/img-history/historia5.png" alt="CS">
+							</div>
+							<div class="slide">
+								<img src="img/img-history/historia6.png" alt="Trench">
+							</div>
+							<div class="slide">
+								<img src="img/img-history/historia7.png" alt="PT CSTBT">
+							</div>
+							<div class="slide">
+								<img src="img/img-history/historia8.png" alt="FZTPT">
+							</div>
+							<div class="slide">
+								<img src="img/img-history/historia9.png" alt="RB">
+							</div>
+							<div class="slide">
+								<img src="img/img-history/historia10.png" alt="LPT">
+							</div>
+							<div class="slide">
+								<img src="img/img-history/historia11.png" alt="RC">
+							</div>
+						</div>
+					</div>
+					<div>
+						<label for="range"></label>
+						<input id="range" type="range" list="tickmarks" min="0" max="10" value="0" onchange="showSlides()" oninput="showTab()">
+						<datalist id="tickmarks">
+							<option value="0"></option>
+							<option value="1"></option>
+							<option value="2"></option>
+							<option value="3"></option>
+							<option value="4"></option>
+							<option value="5"></option>
+							<option value="6"></option>
+							<option value="7"></option>
+							<option value="8"></option>
+							<option value="9"></option>
+							<option value="10"></option>
+						</datalist>
+					</div>
+					<div class="flex2">
+						<div class="tabs" onclick="changeTab(0)">INTRO</div>
+						<div class="tabs" onclick="changeTab(1)">NPT</div>
+						<div class="tabs" onclick="changeTab(2)">PT</div>
+						<div class="tabs" onclick="changeTab(3)">Planar</div>
+						<div class="tabs" onclick="changeTab(4)">CS</div>
+						<div class="tabs" onclick="changeTab(5)">Trench</div>
+						<div class="tabs" onclick="changeTab(6)">PT CSTBT</div>
+						<div class="tabs" onclick="changeTab(7)">FZ NPT</div>
+						<div class="tabs" onclick="changeTab(8)">RB</div>
+						<div class="tabs" onclick="changeTab(9)">LPT</div>
+						<div class="tabs" onclick="changeTab(10)">RC</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="source">
+		</div>
+
+		<footer>
+			<div class="flex">
+				<address id="address">
+				</address>
+				<a href="https://www.facebook.com/jano.chrtan/"><div class="buttonlink" id="contact"></div></a>
+			</div>
+			<div class="footerend">FEI STUBA</div>
+		</footer>
+		
+		<script src="js/anime.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-history.js"></script>
+		<script src="js/source.js"></script>
+	</body>
+</html>

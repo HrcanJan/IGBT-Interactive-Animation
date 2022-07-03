@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#080808">
+		<title>IGBT</title>
+		<link rel="icon" type="image/x-icon" href="fei.png">
+		<link rel = "stylesheet" href = "css/style.css">
+
+		<link rel="apple-touch-icon" href="fei.png">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="./index.html">
+					<img class="logo" src="img/logo.jpg" alt="logo" width="50" height="50">
+				</a>
+				<ul class="nav_links">
+					<li id="l1"> <a href="./work.html" id="link1"></a> </li>
+					<li id="l2"> <a href="./history.html" id="link2"></a> </li>
+					<li id="l3"> <a href="./apps.html" id="link3"></a> </li>
+					<li id="l4"> <a href="./pros_cons.html" id="link4"></a> </li>
+					<li id="l5"> <a href="./main_part.html" id="link5"></a> </li>
+					<li id="l6"> <a href="./faq.html" id="link6"></a> </li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="flag">
+			<abbr title="Slovenčina" id="sk" onclick="slovak()">
+			</abbr>
+
+			<abbr title="English" id="us" onclick="english()">
+			</abbr>
+		</div>
+
+		<div id="intro">
+			<div id="introbutton">
+				<button id="indexbuttonintro" onclick="playVideo()"></button>
+			</div>
+			<div id="above">
+				<div class="overlay"></div>
+				<div class="content" id="content">
+					<button id="bg">x</button>
+					<video id="video" width="800" controls>
+						<source src="video.mp4" type="video/mp4">
+						Your browser does not support HTML video.
+					</video>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="content">
+				<a href="./work.html">
+					<h2 id="indexh1">.</h2>
+					<img src="img/icons/Work.png" alt="How it works" width="200" height="200">
+				</a>
+				<p id="indexp1"></p>
+				<form>
+					<button formaction="./work.html" id="indexb1" class="button"></button>
+				</form>
+			</div>
+
+			<div class="content">
+				<a href="./history.html">
+					<h2 id="indexh2">.</h2>
+					<img src="img/icons/History.png" alt="History" width="200" height="200">
+				</a>
+				<p id="indexp2"></p>
+				<form>
+					<button formaction="./history.html" id="indexb2" class="button"></button>
+				</form>
+			</div>
+
+			<div class="content">
+				<a href="./apps.html">
+					<h2 id="indexh3">.</h2>
+					<img src="img/icons/App.png" alt="Its' applications" width="200" height="200">
+				</a>
+				<p id="indexp3"></p>
+				<form>
+					<button formaction="./apps.html" id="indexb3" class="button"></button>
+				</form>
+			</div>
+
+			<div class="content">
+				<a href="./pros_cons.html">
+					<h2 id="indexh4">.</h2>
+					<img src="img/icons/Pros.png" alt="Pros / Cons" width="200" height="200">
+				</a>
+				<p id="indexp4"></p>
+				<form>
+					<button formaction="./pros_cons.html" id="indexb4" class="button"></button>
+				</form>
+			</div>
+
+			<div class="content">
+				<a href="https://webte1.fei.stuba.sk/~xhrcan/IGBT/main_part">
+					<h2 id="indexh5">.</h2>
+					<img src="img/icons/Main.png" alt="Main working part" width="200" height="200">
+				</a>
+				<p id="indexp5"></p>
+				<form>
+					<button formaction="./main_part.html" id="indexb5" class="button"></button>
+				</form>
+			</div>
+			<div class="content">
+				<a href="./faq.html">
+					<h2>FAQ</h2>
+					<img src="img/icons/Faq.png" alt="FAQ" width="200" height="200">
+				</a>
+				<p id="indexp6"></p>
+				<form>
+					<button formaction="./faq.html" id="indexb6" class="button"></button>
+				</form>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="flex">
+				<address id="address">
+				</address>
+				<a href="https://www.facebook.com/jano.chrtan/"><div class="buttonlink" id="contact"></div></a>
+			</div>
+			<div class="footerend">FEI STUBA</div>
+		</footer>
+		
+		<script src="js/anime.min.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>

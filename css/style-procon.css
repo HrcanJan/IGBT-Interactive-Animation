@@ -1,0 +1,36 @@
+body{
+  font-size: 20px;
+}
+
+.section {
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: rgb(201, 216, 193);
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pro {
+  padding: 20px;
+}
+
+.con {
+  background-color: white;
+  padding: 20px;
+}
+
+@media (min-width: 200px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 800px) {
+	.container {
+		grid-template-columns: 1fr 1fr;
+	}
+}

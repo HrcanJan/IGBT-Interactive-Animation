@@ -1,0 +1,161 @@
+img {
+    vertical-align: middle;
+    margin: 0;
+}
+
+.container {
+    font-size: 18px;
+    padding: 20px 20px 0;
+    height: 550px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+input {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 75%;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto auto;
+}
+
+.slides {
+    width: 1000%;
+    height: 500px;
+    display: flex;
+}
+
+.slide {
+    width: 10%;
+    transition: 1s;
+}
+
+.flex2 {
+    margin: auto auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+.tabs {
+    cursor: pointer;
+    width: 9%;
+}
+
+.tabs:hover {
+    color: rgb(67, 60, 73);
+}
+
+#IGBT, #IGBT2 {
+    background-color: white;
+    height: 500px;
+    position: relative;
+}
+
+svg{
+    width: 90%;
+    position: absolute;
+    left: -70px;
+}
+
+@media (min-width: 200px) {
+    .slider {
+      width: 350px;
+      height: 220px;
+    }
+    .slide img {
+        width: 350px;
+        height: 220px;
+    }
+    .flex2 {
+        width: 350px;
+        font-size: 10px;
+    }
+    #IGBT, #IGBT2 {
+        width: 350px;
+        height: 220px;
+    }
+    svg {
+        top: -200px;
+    }
+}
+
+@media (min-width: 550px) {
+    .slider {
+        width: 450px;
+        height: 250px;
+    }
+    .slide img {
+        width: 450px;
+        height: 250px;
+    }
+    .flex2 {
+        width: 450px;
+        font-size: 12px;
+    }
+    #IGBT, #IGBT2 {
+        width: 450px;
+        height: 250px;
+    }
+    svg {
+        top: -175px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .slider {
+        width: 600px;
+        height: 350px;
+    }
+    .slide img {
+        width: 600px;
+        height: 350px;
+    }
+    .flex2 {
+        width: 600px;
+        font-size: 15px;
+    }
+    #IGBT, #IGBT2 {
+        width: 650px;
+        height: 405px;
+    }
+    svg {
+        top: -100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .slider {
+        width: 650px;
+        height: 400px;
+    }
+    .slide img {
+        width: 650px;
+        height: 400px;
+    }
+    .flex2 {
+        width: 650px;
+        font-size: 18px;
+    }
+    #IGBT, #IGBT2 {
+        width: 800px;
+        height: 500px;
+    }
+    svg {
+        top: -50px;
+    }
+}

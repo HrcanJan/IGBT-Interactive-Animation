@@ -1,0 +1,44 @@
+body {
+  font-size: 17px;
+}
+
+.section {
+  padding-bottom: 0;
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.question {
+  background-color: white;
+  padding: 20px;
+}
+
+.answer {
+  padding: 20px;
+}
+
+.answer img {
+    float: none;
+    margin-top: 30px;
+}
+
+li {
+  margin-top: 5px;
+}
+
+@media (min-width: 200px) {
+	.wrapper {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 800px) {
+	.wrapper {
+		grid-template-columns: 2fr 3fr;
+	}
+}

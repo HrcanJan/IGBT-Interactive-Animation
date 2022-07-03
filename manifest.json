@@ -1,0 +1,22 @@
+{
+    "name" : "Insulated Gate Bipolar Transistor",
+    "short_name" : "IGBT",
+    "start_url" : "/igbt/",
+    "background_color" : "#EBEBEBFF" ,
+    "theme_color" : "#080808",
+    "display" : "standalone",
+    "icons" : [
+        {
+            "src" : "fei.png",
+            "sizes" : "192x192",
+            "type" : "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src" : "fei512.png",
+            "sizes" : "512x512",
+            "type" : "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

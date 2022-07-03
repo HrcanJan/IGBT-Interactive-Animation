@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#080808">
+		<title>IGBT - How it works</title>
+		<link rel="icon" type="image/x-icon" href="fei.png">
+		<link rel = "stylesheet" href = "css/style.css">
+		<link rel = "stylesheet" href = "css/style-work.css">
+
+		<link rel="apple-touch-icon" href="fei.png">
+		<script src='https://cdn.plot.ly/plotly-2.4.2.min.js'></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="./index.html">
+					<img class="logo" src="img/logo.jpg" alt="logo" width="50" height="50">
+				</a>
+				<ul class="nav_links">
+					<li id="l1"> <a href="./work.html" id="link1"></a> </li>
+					<li id="l2"> <a href="./history.html" id="link2"></a> </li>
+					<li id="l3"> <a href="./apps.html" id="link3"></a> </li>
+					<li id="l4"> <a href="./pros_cons.html" id="link4"></a> </li>
+					<li id="l5"> <a href="./main_part.html" id="link5"></a> </li>
+					<li id="l6"> <a href="./faq.html" id="link6"></a> </li>
+				</ul>
+			</nav>
+		</header>
+		<div class="flag">
+			<abbr title="Slovenčina" id="sk" onclick="slovakWork()">
+			</abbr>
+
+			<abbr title="English" id="us" onclick="englishWork()">
+
+			</abbr>
+		</div>
+
+		<div class="container">
+			<h1 id="workh">.</h1>
+			
+			<div class="sidenav">
+				<p>
+					<label for="Uge" id="workl1"></label>
+					<br>
+					<select id="Uge" onchange="changeVoltage()">
+						<option value="0">0V</option>
+						<option value="3">3V</option>
+						<option value="6" selected="selected">6V</option>
+					  </select>
+				</p>
+				<p>
+					<label for="Uce" id="workl2"></label>
+					<br>
+					<select id="Uce" onchange="changeVoltage()">
+						<option value="0">0V</option>
+						<option value="2">2V</option>
+						<option value="6" selected="selected">6V</option>
+						<option value="10">10V</option>
+					  </select>
+				</p>
+				<p>
+					<label id="pause" class="label" onclick="alterAnimation()">Pause animation</label>
+				</p>
+				<p>
+					<label id="label" class="label" onclick="labelChange()">Show labeling</label>
+				</p>
+				<p>
+					<label class="label" id="leg" onclick="legendChange()">Show legend</label>
+				</p>
+				<p id="workap">
+					<a href="./main_part.html" id="worka"></a>
+				</p>
+
+				<div id="legend">
+					<div class="legend">
+					<img src="img/img-work/majority-electron.png" alt="majority-electron" width="25" height="25">
+					<p id="workp1"></p>	
+					<img src="img/img-work/majority-hole.png" alt="majority-hole" width="25" height="25">
+					<p id="workp2"></p>
+					<img src="img/img-work/el-field.png" alt="el-field" width="25" height="25">
+					<p id="workp3"></p>
+					<img src="img/img-work/pro-field.png" alt="pro-field" width="25" height="25">
+					<p id="workp4"></p>
+				</div>
+
+				</div>
+			</div>
+			
+			<div id="main">
+				<div id="IGBT"></div>
+				<div id="graphDiv">
+
+				</div>
+			</div>
+
+		</div>
+
+		<div id="backdrop">
+			<div id="modal">
+				Testicle
+			</div>
+		</div>
+
+		<footer>
+			<div class="flex">
+				<address id="address">
+				</address>
+				<a href="https://www.facebook.com/jano.chrtan/"><div class="buttonlink" id="contact"></div></a>
+			</div>
+			<div class="footerend">FEI STUBA</div>
+		</footer>
+
+		<script src="js/anime.min.js"></script>
+		<script src="js/svg.js"></script>
+		<script src="js/script-work-draw.js"></script>
+		<script src="js/script-work-language.js"></script>
+		<script src="js/script-work.js"></script>
+		<script src="js/script-work-graph.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+	
+</html>
